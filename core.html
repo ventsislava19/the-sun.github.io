@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="https://upload.wikimedia.org/wikipedia/commons/3/37/1919_eclipse_positive.jpg">
+
+     <!-- Google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+         rel="stylesheet">
+
+    <title>The Sun</title>
+    <link rel="stylesheet" href="main.css">
+
+    <script src="main.js" defer></script>
+</head>
+<body class="structure">
+
+    <header class="primary-header flex">
+        <div>
+            <a href="main.html"><img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Solar_Eclipse_May_20%2C2012.jpg" alt="sun-eclipse logo" class="logo"></a>
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+            <nav>
+                <ul data-devisible="false" class="primary-navigation underline-indicators flex">
+                    <li><a class="uppercase ff-sans-cond text-white letter-spacing-2" href="main.html"><span aria-hidden="true">00</span>Home</a></li>
+                    <!-- aria-hidden: el. cant be read from screen readers -->
+                    <li><a class="uppercase ff-sans-cond text-white letter-spacing-2" href="des_characteristics.html"><span aria-hidden="true">01</span>Characteristics <br> & Life cycle</a></li>
+                    <li class="active"><a class="uppercase ff-sans-cond text-white letter-spacing-2" href="des_structure.html"><span aria-hidden="true">02</span>Structure</a></li>
+                    <li><a class="uppercase ff-sans-cond text-white letter-spacing-2" href="des_magnetic_field.html"><span aria-hidden="true">03</span>Magnetic field</a></li>
+                    <!-- <li><a class="uppercase ff-sans-cond text-white letter-spacing-2" href="life_cycle.html"><span aria-hidden="true">04</span>Life cycle</a></li> -->
+                </ul>
+            </nav>
+    </header>
+
+    <main class="grid-container grid-container--structure flow">
+        <h1 class="numbered-title"><span>02</span>Pick a layer!</h1>
+
+        <!-- <img src="/images/structure/stucture_overlook.png" alt="overlook of structure" style="width: 600px; height: auto;"> -->
+        <img src="images/structure/stucture_overlook.png" alt="overlook of structure">
+
+        <div class="tab-list">
+            <div class="tab-list underline-indicators flex">
+                <a aria-selected="false" href="des_structure.html" class="tab-list uppercase ff-sans-cond text-light bg-dark letter-spacing-2" style="text-decoration: none;">Overlook</a>
+                <a aria-selected="false" href="zones.html" class="tab-list uppercase ff-sans-cond text-light bg-dark letter-spacing-2" style="text-decoration: none;">Radiative zone & Convective zone</a>
+            </div>
+
+            <div class="tab-list underline-indicators flex">
+                <a aria-selected="true" href="core.html" class="tab-list uppercase ff-sans-cond text-light bg-dark letter-spacing-2" style="text-decoration: none;">Core</a>
+                <a aria-selected="false" href="photosphere.html" class="tab-list uppercase ff-sans-cond text-light bg-dark letter-spacing-2" style="text-decoration: none;">Photosphere</a>
+                <a aria-selected="false" href="chromosphere.html" class="tab-list uppercase ff-sans-cond text-light bg-dark letter-spacing-2" style="text-decoration: none;">Chromosphere</a>
+                <a aria-selected="false" href="corona.html" class="tab-list uppercase ff-sans-cond text-light bg-dark letter-spacing-2" style="text-decoration: none;">Corona</a>
+            </div>
+        </div>
+
+        <article class="structure-info">
+            <h2 class="fs-700 uppercase ff-serif">Core</h2>
+
+            <p>Due to the massive mass of the sun, its' internal structure is extremely compressed. The core, for example, is 150 times more compressed than water. Also, the core is the hottest layer in the Sun - reaching 13,000,000 K. Because of this, heat collected in it becomes the ideal environment for nuclear reactions to occur. These reactions consist of the joining of 4 hydrogen atoms into 1 helium atom. In this reaction the mass of the 4 hydrogen atoms is greater than the mass of the helium atom. It is this difference in the masses that becomes the energy of the sun.</p>
+
+            <div class="structure-meta flex">
+                <div>
+                  <h3 class="text-light fs-200 uppercase">Fun fact</h3>
+                  <p>The Sun was formed about 4.6 billion years ago from the collapse of a part of a giant molecular cloud that consisted mostly of hydrogen and helium.</p>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+</body>
+</html>

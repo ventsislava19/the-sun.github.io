@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="https://upload.wikimedia.org/wikipedia/commons/3/37/1919_eclipse_positive.jpg">
+
+     <!-- Google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+         rel="stylesheet">
+
+    <title>The Sun</title>
+    <link rel="stylesheet" href="main.css">
+
+    <script src="main.js" defer></script>
+</head>
+<body class="home">
+
+    <header class="primary-header flex">
+        <div>
+            <a href="design-system.html"><img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Solar_Eclipse_May_20%2C2012.jpg" alt="sun-eclipse logo" class="logo"></a>
+            <!-- <a href="main.html"><img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Solar_Eclipse_May_20%2C2012.jpg" alt="sun-eclipse logo" class="logo"></a> -->
+            <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Solar_Eclipse_May_20%2C2012.jpg" alt="sun-eclipse logo" class="logo"> -->
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+            <nav>
+                <ul data-devisible="false" class="primary-navigation underline-indicators flex">
+                    <li class="active"><a class="uppercase ff-sans-cond text-white letter-spacing-2" href="main.html"><span aria-hidden="true">00</span>Home</a></li>
+                    <!-- aria-hidden: el. cant be read from screen readers -->
+                    <li><a class="uppercase ff-sans-cond text-white letter-spacing-2" href="des_characteristics.html"><span aria-hidden="true">01</span>Characteristics <br> & Life cycle</a></li>
+                    <li><a class="uppercase ff-sans-cond text-white letter-spacing-2" href="des_structure.html"><span aria-hidden="true">02</span>Structure</a></li>
+                    <li><a class="uppercase ff-sans-cond text-white letter-spacing-2" href="des_magnetic_field.html"><span aria-hidden="true">03</span>Magnetic field</a></li>
+                    <!-- <li><a class="uppercase ff-sans-cond text-white letter-spacing-2" href="life_cycle.html"><span aria-hidden="true">04</span>Life cycle</a></li> -->
+                </ul>
+            </nav>
+    </header>
+
+    <main id="main" class="grid-container grid-container--home">
+        <div>
+            <h1 class="text-light fs-500 ff-sans-cond uppercase letter-spacing-1">Let's get to know<span class="fs-900 ff-serif text-white uppercase">the sun</span></h1>
+
+            <p>A small website containing the basics about the sun, its' structure and different phenomena that take place in it.</p>
+        </div>
+        <div>
+            <img class="main_image" src="images/home_page.png" alt="sun in purple cuz purple is cool :D">
+        </div>
+    </main>
+
+</body>
+</html>
