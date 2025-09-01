@@ -538,6 +538,8 @@ select {
 .grid-container--structure > .tab-list {
     grid-area: tabs;
     text-align: center;
+    /* outline: solid pink 1px; */
+    padding-bottom: 1rem;
 }
 
 .grid-container--structure > .structure-info {
@@ -603,8 +605,9 @@ select {
 
 .grid-container--characteristics-life-span > img {
     grid-area: image;
-    height: 380px;
+    height: 350px;
     width: auto;
+    outline: 1px hsl( var(--clr-light) ) solid;
 }
 
 .characteristics-life-span-info > .dot-indicators {
@@ -639,6 +642,7 @@ select {
     .numbered-title {
         margin-top: 2rem;
     }
+
 
     /*** Structure grids ***/
     .structure-meta {
@@ -683,6 +687,7 @@ select {
         outline: 1px solid pink;
     }
 
+
     /*** Structure grids ***/
     .grid-container--structure > .tab-list * {
         flex-grow: 1;
@@ -710,7 +715,7 @@ select {
         text-align: center;
     }
 
-    .magnetic-field-info h2{
+    .magnetic-field-info h2 {
         font-size: 2.30rem;
     }
 
@@ -728,6 +733,7 @@ select {
         grid-area: image;
         height: 330px;
         width: auto;
+        /* outline: 10px solid red; */
     }
 }
 
@@ -831,6 +837,7 @@ select {
 
     .magnetic-field-info h2 {
         text-align: center;
+        padding-bottom: 1rem;
     }
 
     .magnetic-field-info p {
@@ -843,16 +850,11 @@ select {
 
     .grid-container--magnetic-field > img {
         grid-area: image;
-        /* margin-top: 6rem; */
-        /* grid-column: 2; */
-        /* max-width: 50%; */
-        /* padding-bottom: 8rem; */
         /* height: 300px; */
         /* width: auto; */
-        /* outline: 3px solid pink; */
-        justify-self: right;
-        /* outline: 3px solid white; */
-        /* grid-column-start: 2; */
+        /* justify-self: right; */
+        /* outline: 1px hsl( var(--clr-white) ) solid; */
+        padding-bottom: 8rem;
     }
 
     .magnetic-field-meta {
@@ -866,7 +868,9 @@ select {
 
     /* Characteristics- & Life span grids */
     .grid-container--characteristics-life-span {
-        grid-template-columns: minmax(0, 15rem) minmax(30rem, 40rem) minmax(30rem, 40rem) minmax(0, 5rem);
+        grid-template-columns: minmax(0, 15rem) minmax(30rem, 40rem) minmax(35rem, 40rem) minmax(0, 5rem);
+        /* grid-template-columns: minmax(0, 15rem) minmax(10rem, 40rem) minmax(30rem, 40rem) minmax(0, 5rem); */
+        /* grid-template-columns: minmax(0, 15rem) minmax(30rem, 40rem) minmax(30rem, 40rem) minmax(0, 5rem); */
         /* --flow-space: 2rem; */
         justify-items: start;
         align-items: start;
@@ -878,10 +882,15 @@ select {
     }
 
     .grid-container--characteristics-life-span > img {
-        /* grid-area: image; */
         grid-column: 3;
-        /* margin-left: 6rem; */
+        margin-right: 11rem;
+        margin-bottom: 10rem;
     }
+
+    .grid-container--characteristics-life-span > .life-span-image {
+    margin-right: 11rem;
+    margin-bottom: 14rem;
+}
 
     .grid-container--characteristics-life-span > *:last-child {
         grid-column: 2;
@@ -895,7 +904,16 @@ select {
         justify-content: center;
         margin-bottom: 2rem;
     }
+
+    .grid-container--characteristics-life-span > h1 {
+        margin-bottom: 0.5rem;
+    }
+
+    .characteristics-life-span-info > h2 {
+        margin-bottom: 1rem;
+    }
 }
+
 
 .grid-container > img,
 .grid-container [class*="image"] {
